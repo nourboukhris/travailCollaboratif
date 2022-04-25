@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <xsd:element name="nom" type="xsd:string"/>
+  
+    <xsd:simpleType name="Typheures">
+    <xsd:restriction base="xsd:float">
+      <xsd:minInclusive value="0.5"/>
+      <xsd:maxInclusive value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType> 
+   
+  
+</xsd:schema>
