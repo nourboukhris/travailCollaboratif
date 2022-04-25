@@ -10,5 +10,20 @@
     </xsd:restriction>
   </xsd:simpleType> 
    
+  <xsd:element name="cours" type="Typheures"/>
+  <xsd:element name="TD" type="Typheures"/>
+  <xsd:element name="TP" type="Typheures"/>
+  <xsd:element name="CI" type="Typheures"/>
+  
+ <xsd:element name="autres">
+    <xsd:complexType>
+      <xsd:sequence>
+          <xsd:element ref="cours" minOccurs="0"/>
+          <xsd:element ref="TD" minOccurs="0"/>
+          <xsd:element ref="TP" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
   
 </xsd:schema>
